@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.carddatarequest.fragmentcarddata.CardDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:id="@+id/d"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:stretchColumns="1">
+        <EditText
+            android:id="@+id/editBinCard"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:hint="@string/enter_card_bin"
+            android:layout_marginBottom="30dp"
+            android:background="@android:drawable/editbox_background_normal" />
+        <TableRow>
+
+            <TextView
+                android:background="@android:drawable/divider_horizontal_textfield"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="@string/scheme_network" />
+            <TextView
+                android:background="@android:drawable/divider_horizontal_textfield"
+                android:text="@string/prepaid"
+                android:gravity="center"
+                android:padding="6dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id = "@+id/network"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id = "@+id/prepayment"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="@color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:background="@android:drawable/divider_horizontal_textfield"
+                android:text="@string/brand"
+                android:gravity="center"
+                android:padding="6dip" />
+            <TextView
+                android:background="@android:drawable/divider_horizontal_textfield"
+                android:text="@string/country"
+                android:gravity="center"
+                android:padding="6dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id = "@+id/brand"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id = "@+id/country"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="@color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id = "@+id/coordinates"
+                android:autoLink="all"
+                android:gravity="center"
+                android:layout_column="1"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:background="@android:drawable/divider_horizontal_textfield"
+                android:text="@string/card_number"
+                android:gravity="left"
+                android:paddingStart="55dp"
+                android:padding="6dip"
+                android:layout_span="2"/>
+
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:background="#54A8A4A4"
+                android:text="@string/length"
+                android:gravity="right"
+                android:padding="1dip"
+                android:layout_span="1"/>
+
+            <TextView
+                android:background="#54A8A4A4"
+                android:gravity="left"
+                android:padding="1dip"
+                android:paddingStart="30dp"
+                android:text="@string/luhn" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id = "@+id/lengthNumber"
+                android:gravity="right"
+                android:padding="5dip"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id = "@+id/luhn"
+                android:gravity="left"
+                android:paddingStart="30dp"
+                android:padding="5dip"
+                android:textColor="@color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:background="@android:drawable/divider_horizontal_textfield"
+                android:text="@string/type"
+                android:gravity="center"
+                android:padding="6dip" />
+            <TextView
+                android:background="@android:drawable/divider_horizontal_textfield"
+                android:text="@string/bank"
+                android:gravity="center"
+                android:padding="6dip"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id = "@+id/typeCard"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id = "@+id/bankName"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id = "@+id/banklink"
+                android:autoLink="all"
+                android:gravity="center_horizontal"
+                android:padding="5dip"
+                android:textColor="@color/black"
+                android:layout_column="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id = "@+id/bankPhone"
+                android:autoLink="all"
+                android:gravity="center_horizontal"
+                android:padding="5dip"
+                android:textColor="@color/black"
+                android:layout_column="1"/>
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>
